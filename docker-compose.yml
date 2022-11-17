@@ -9,6 +9,6 @@ services:
       - "../<FRONT_DIR_NAME>/.:/app"
 
   back-jsb:
-    build: ../<back-jsb>
+    build: ../<back-jsb> # Replace with the NAME of your JSB project
     ports:
       - 8080:8080
