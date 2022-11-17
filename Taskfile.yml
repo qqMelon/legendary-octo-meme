@@ -1,0 +1,26 @@
+version: "3"
+
+tasks:
+  dev-up:
+    cmds:
+      - docker compose up -d
+    silent: true
+    desc: Demarre les container docker de developpement
+  
+  dev-up-build:
+    cmds:
+      - docker compose up -d --build
+    silent: true
+    desc: ReBuild les images docker puis lance les container docker de developpement
+
+  dev-down:
+    cmds:
+      - docker compose down
+    silent: true
+    desc: Stop les container docker de developpement
+
+  dev-logs:
+    cmds:
+      - docker compose logs -f
+    silent: true
+    desc: Affiche les logs des container docker de developpement
