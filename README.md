@@ -1,5 +1,12 @@
 # Docker env project
 
+### Actions avant d'executer les commandes
+
+1. Deplacer/copier les Dockerfiles dans le dossier `pkg` vers les dossiers des projets correspondant.
+2. Renommer ces dossiers deplaces precedemment
+3. Renommer les entrers des dossiers build dans le `docker-compose.yml`
+
+
 ## Architecture
 
 Exemple de l'architecture des dossiers project pour le bon fonctionnement des builds.

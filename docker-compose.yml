@@ -1,9 +1,14 @@
 version: "3.9"
 services:
   front-angular:
-    build: ../demo-app # Replace with the NAME of your Angular project
+    build: ../<front-angular> # Replace with the NAME of your Angular project
     ports:
       - 4200:4200
     volumes:
       - "/app/node_modules"
-      - "../demo-app/.:/app"
+      - "../<FRONT_DIR_NAME>/.:/app"
+
+  back-jsb:
+    build: ../<back-jsb>
+    ports:
+      - 8080:8080
